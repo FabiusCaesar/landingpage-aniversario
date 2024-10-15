@@ -1,0 +1,12 @@
+// Mixin para títulos
+@mixin title($fontSize: 3.2rem) {
+    font-size: $fontSize;
+    line-height: $fontSize + 1.2rem; // Ajusta o line-height
+    font-family: "Poppins", sans-serif;
+}
+
+// Mixin para textos
+@mixin text($fontSize: 1.5rem) {
+    font-size: $fontSize;
+    line-height: $fontSize + 0.25rem; // Ajusta o line-height
+}

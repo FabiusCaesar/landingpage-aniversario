@@ -1,0 +1,25 @@
+
+.footer {
+    width: 100%;
+    
+    &__container {
+        max-width: 80vw;
+        margin: 0 auto;
+        padding: 2vh 0 6vh;
+        
+        &__info {
+            display: flex;
+            justify-content: space-around;
+            list-style: none;
+
+            @media (max-width: 1024px) {
+                display: block;
+                text-align: center;
+            }
+
+            &__item {
+                margin-top: 4vh;
+            }
+        }
+    }
+}

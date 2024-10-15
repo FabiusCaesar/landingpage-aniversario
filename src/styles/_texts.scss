@@ -1,0 +1,36 @@
+@use 'variables';
+@use 'mixins';
+
+// Classes de título
+.title {
+    @include mixins.title(); // Usa o valor padrão definido no mixin
+    color: variables.$colorText1;
+}
+
+.title--small {
+    @include mixins.title(2rem);
+    color: variables.$colorText1;
+}
+
+
+// Classes de texto
+.text {
+    @include mixins.text(); // Usa o valor padrão definido no mixin
+    color: variables.$colorText1;
+}
+
+
+// Ajuste da fonte base para telas menores
+html {
+    @media (max-width: 1024px) {
+        font-size: 14px;
+    }
+
+    @media (max-width: 768px) {
+        font-size: 12px;
+    }
+
+    @media (max-width: 375px) {
+        font-size: 10px;
+    }
+}
